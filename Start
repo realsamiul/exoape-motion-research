@@ -1,0 +1,156 @@
+
+I’ve gotten the AWS free-tier credits, $100 now and potentially $200 total, and I want to dedicate essentially all of it toward Claude models. For the first time, I actually have access to Claude at a level where it could become a real creative and strategic partner rather than just a chatbot that politely forgets everything five messages later. My best ideation happens while I’m walking around recording voice notes on my phone, so I want that to become part of the workflow itself.
+
+Then, once the direction becomes clearer, I want the heavier execution layer to move onto my laptop.
+
+So far I’ve mostly used Codex through the terminal. It was excellent as an executor, very strong at implementation once pointed in the right direction. But what I want from Claude is broader operational awareness if possible. I want it to be able to at least retrieve or assess the state of my infrastructure across systems: my Google Cloud projects, Modal dashboard, Vercel account, Oracle Always Free cloud setup, storage layers, and the rest of the stack.
+
+Right now my tooling ecosystem is fragmented but powerful. I still have roughly $300 in GCP credits along with Gemini Advanced access, which gives me extensive Gemini Pro usage through GCP. I’m also on the final week of a ChatGPT Business subscription that gave me access to Codex CLI and Codex Cloud, though I’ll probably downgrade that into a ChatGPT Plus account afterward. I also have access to a shared SuperGrok Premium account. Modern AI infrastructure increasingly resembles a medieval kingdom where every wizard rents compute from a different mountain cave and charges separately for the privilege.
+
+What I want is for Claude to become the primary design and systems-thinking layer for my immediate goals.
+
+The first goal is relatively straightforward: build a cricket insights app as a way to become comfortable with the workflow itself while setting up an architecture that properly utilizes GCP, Oracle Cloud, Modal, and the rest of the infrastructure efficiently.
+
+But the real objective is reducing coordination overhead. Right now an absurd amount of time disappears into operational friction: copy-pasting context, re-explaining prior decisions, translating what one AI said to another AI, moving files around, renaming outputs, managing versions, distributing assets across platforms, and keeping track of abandoned versus active directions. The actual thinking is often the easy part. The orchestration layer is what kills momentum.
+
+And for anything involving a visual component, I need a frontend workflow capable of recognizing and matching the sophistication of the backend systems being built underneath it. That’s where current AI workflows still feel deeply inadequate. Design remains extremely difficult for these systems unless I provide painstakingly curated references, source files, interaction patterns, and aesthetic constraints manually.
+
+One thing I’ve realized while trying to do website design is that even models like Anthropic’s Claude, OpenAI’s ChatGPT, and definitely DeepSeek struggle badly with aesthetic design. To be fair, aesthetic judgment is hard. But it’s not magic. There is a system behind good design: symmetry, restraint, spacing, rhythm, visual hierarchy, all of it. Humans keep pretending great design descends from the heavens like divine revelation handed to Scandinavian art directors. It doesn’t. There are patterns.
+
+The problem is that once I develop a design language, I end up carrying it entirely in my own head because the models don’t actually understand it deeply enough to preserve it. They can help imitate fragments, but they can’t maintain coherence over time. So I keep having to explain the same principles again and again. They hallucinate, they drift, and eventually the design system gets lost. By the time I repair everything, the design no longer matches the implementation layer. Not backend logic necessarily, but the actual frontend behavior and architecture stop aligning.
+
+And honestly, I still don’t fully have an answer to the design problem. I don’t know whether tools like V0 are the answer, or whether for web apps and websites the only real solution is staying close to source files and controlling everything directly.
+
+That’s actually one of the projects I started experimenting with using Codex CLI: taking published Nuxt websites, retrieving their production assets, backtracking the compiled JS, and reconstructing the original input structure as closely as possible. Almost every website aesthetic I genuinely admire now happens to be built in Nuxt. That’s just where the ecosystem drifted. CSS reconstruction is relatively manageable. Rebuilding Reactivity and component architecture is much harder. But if I can solve that pipeline properly, then suddenly prototyping becomes much easier, both for websites and for web apps.
+
+Apps themselves are still a different problem. I don’t think I understand that layer deeply enough yet.
+
+But branding, honestly, feels even more important than the product sometimes. If I can’t communicate the identity and emotional logic of what I’m building, then I fail before the product even has a chance. I have strong instincts about branding, but translating those instincts into systems is difficult. I don’t know how to properly externalize the taste itself.
+
+For example: I’m colorblind. So in my ideal workflow, I’d hand the system eight websites I love and say: figure out what I’m responding to technically. Is it contrast ratios? Motion timing? Typography density? Spatial restraint? Then turn that into a reusable design system I can actually work from.
+
+Templates help a little, if you curate aggressively. Most GitHub repos look like generic SaaS dashboards pretending to be innovation. Humans discovered rounded corners and gradients and collectively decided civilization was complete. But occasionally there are genuinely thoughtful implementations.
+
+Some of the best visual demos I’ve found come from places like Codrops and experimental Three.js showcases. The issue is that demos are optimized to showcase a single impressive interaction, not to survive the realities of a full production website with state management, accessibility, scalability, performance constraints, and evolving content architecture. They’re exhibition pieces, not living systems.
+
+The reason I’m explaining all of this is because it shapes how I think about building things.
+
+Right now I need to build a website that communicates the projects I’m working on.
+
+One is a cricket insights generator web app.
+
+Another is an intelligent document reader that can handle Bengali handwriting recognition.
+
+Another is a platform based on my experience navigating Ivy League admissions from a Bangladeshi perspective. The idea is to combine scraped admissions data, financial aid likelihoods, application strategy, SAT prep, essay guidance, and realistic targeting into a single system for low-income Bangladeshi students who currently spend enormous amounts of money on terrible advice. A student could input their profile and immediately understand: here’s your probable aid range, here are realistic universities, here’s how to strengthen your application, and here’s what matters most strategically.
+
+Those first few products are relatively achievable.
+
+But they lead into the larger ideas I’ve been exploring for the last two years. Most of the early prototypes were amateurish, but they taught me how to think about the actual problems.
+
+One project involved geospatial machine learning for Bangladesh: flood prediction, erosion forecasting, crop analysis using Sentinel imagery and environmental data.
+
+Another used global shipping demand signals combined with satellite imagery of Port of Chittagong to predict freight container pricing. Surprisingly, the forecasts weren’t terrible. At one point I was within roughly $100 on a ~$900 shipping movement prediction about two weeks ahead. Not enough to conquer global trade, unfortunately. The shipping industry remains safe from my sleep schedule.
+
+Then I started thinking about more localized systems, especially visual quality-control models and industrial prediction systems.
+
+The crucial difference now is resources. Two years ago I was mostly improvising, reading papers, studying what larger firms were doing, and trying to adapt those ideas to Bangladeshi constraints. But through that process I realized something important: the edge in emerging markets isn’t necessarily inventing radically new AI. The edge is adapting architectures to local constraints better than anyone else.
+
+In Bangladesh, enterprise AI products exist, but they’re often unusable in practice. Too expensive. Too bandwidth-heavy. Too dependent on stable infrastructure.
+
+So I started focusing on edge architecture instead: lightweight systems that can run locally on constrained hardware. Raspberry Pi deployments, local inference, compressed models, intermittent synchronization. Systems that still function under unreliable internet conditions.
+
+And that’s where the broader social implications became interesting.
+
+Education is the clearest example. Everyone keeps trying to build educational platforms assuming stable internet, modern smartphones, and continuous connectivity. But a massive percentage of the population either lacks reliable internet or shares extremely old Android devices. Many students still use button phones.
+
+So most “edtech” solutions collapse immediately outside urban centers.
+
+That led me to an idea for a Bengali educational tutor system designed specifically for SSC and HSC students using infrastructure they already have. Many button phones still support radio functionality. So instead of requiring full internet access, the system could distribute compressed learning packets through low-bandwidth channels and allow interaction through extremely lightweight interfaces. Students could respond using button inputs or even voice calls routed through centralized servers.
+
+For areas with almost no connectivity, local hubs could periodically sync educational data through distributed modem stations deployed at schools or community centers. Instead of assuming constant internet, the architecture would assume scarcity from the beginning.
+
+That, to me, is the real design challenge. Not just making something beautiful, but making systems that survive contact with reality. Humans keep building software for ideal conditions as if infrastructure inequality is a minor footnote instead of the main event.
+
+
+Now I think you have a sense of how I think, what my standards are, what my current resources look like, where my blind spots are, and where I actually need help.
+
+I’m a consultant by trade. I’ve run a startup in New York, a restaurant, a newspaper, and now a resort in Bangladesh. I’m transitioning into this space seriously, and we need to move fast.
+
+The immediate goal is simple: create something visible, credible, and bankable quickly enough to keep momentum and funding alive. Once that exists, I can immediately apply for larger startup-tier credits across GCP, Azure, and similar ecosystems, and I’m fairly confident I can secure them. And if things go well, these same systems can double as part of my consulting and freelancing portfolio too.
+
+Next year I’ll likely begin my MBA, so timing matters.
+
+The short-term roadmap is:
+	•	the website,
+	•	the app,
+	•	and then one additional project from the larger list, whichever makes the most strategic sense first.
+
+But the website is mandatory. The app also feels immediately viable. The third project is more flexible.
+
+What matters most is speed.
+
+I want the first phase to produce something real within days. And when I say days, I mean operating at near-absurd intensity, twenty-hour workdays if necessary. That pace is actually possible now because unlike before, I’m no longer simultaneously inventing the idea, researching the infrastructure, discovering the architecture, and learning the tooling from scratch all at once.
+
+Previously, when I explored edge architecture and low-connectivity systems, I was doing everything manually under enormous constraints. I had to discover the problems and build the solutions simultaneously. Looking back, many of the models themselves were actually fairly basic. The hard part was understanding where the opportunity existed.
+
+Now the philosophy is different:
+don’t reinvent the wheel.
+
+Be extremely surgical about identifying what already works, understanding why it works, where it works, and then adapting it intelligently to our context.
+
+For example, with the intelligent document reader project, I originally applied it to bank checks. I used Gemini Flash models because I couldn’t afford stronger models at the time. And despite the constraints, the system could still infer meaning surprisingly well even when:
+	•	people mixed Bangla and English,
+	•	code-switched mid-sentence,
+	•	wrote fields in the wrong places,
+	•	crossed out sections,
+	•	submitted blurry photos,
+	•	or completely ignored the intended form structure.
+
+The model still understood what was happening contextually.
+
+But then I realized something important: if we isolate only the Bengali OCR portion, much of that capability already exists commercially. AWS Textract and similar systems already solve large parts of the problem.
+
+So instead of rebuilding those primitives, we should focus our energy on the real differentiator:
+how to take AI systems that normally require expensive infrastructure and redesign them for low-resource environments, conservative institutions, unreliable internet, and local execution.
+
+That’s the actual opportunity.
+
+At every stage, I want to aggressively borrow from the best systems that already exist. Use their ideas, use their architectures, use open-source implementations where possible, use established patterns that have already been validated at scale. The important thing is not ego. The important thing is synthesis.
+
+The value comes from understanding:
+	•	what to combine,
+	•	where to apply it,
+	•	what to simplify,
+	•	what to localize,
+	•	and what genuinely needs to be invented from scratch.
+
+For example, advanced sports inference systems already exist. Betting companies and sports analytics firms have spent years solving those problems. There’s no honor in rebuilding those models from zero if the real opportunity is adapting them intelligently to Bangladeshi contexts and products.
+
+That approach gives immediate sophistication and polish without wasting months solving already-solved problems.
+
+Our time should instead go into:
+	•	deployment,
+	•	adaptation,
+	•	edge execution,
+	•	productization,
+	•	usability,
+	•	local constraints,
+	•	monetization,
+	•	and strategic positioning.
+
+The focus now is identifying resources, combining existing intelligence systems, and using our own judgment to piece them together into something cohesive using available infrastructure and networks, then deploying rapidly.
+
+So my immediate question becomes:
+how do I properly use Amazon Bedrock as the center of this workflow?
+
+Not just as a chatbot, but both:
+	•	as a coding and systems assistant on my laptop,
+	•	and as an ongoing strategic and operational partner during ideation.
+
+Is there a proper app workflow for this? Maybe not yet. Then we figure one out.
+
+Do I connect Claude through VS Code? Cursor? Something else entirely?
+
+First we build Claude’s operational infrastructure around me and my workflow. Then the rest can come later.
+
+Because this system needs to become the constant eyes and ears of everything we’re building.
